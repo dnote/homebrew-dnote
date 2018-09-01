@@ -6,11 +6,15 @@ class Dnote < Formula
   sha256 "57a7997268ef330368afc7c6dc8ecdeb5c217985994830379a932faab6372fce"
 
   depends_on "go" => :build
+  depends_on "dep" => :build
 
   def install
+    ENV["GOPATH"] = buildpath
+
     (buildpath/"src/github.com/dnote/cli").install buildpath.children
     cd "src/github.com/dnote/cli" do
-      system "go", "build", "-o", bin/"dnote", "-ldflags" "" "-X" "main.apiEndpoint=https://api.dnote.io"
+      system "dep", "ensure"
+      system "go", "build", "-ldflags", "-X main.apiEndpoint=https://api.dnote.io", "-o", bin/"dnote"
     end
   end
 end
