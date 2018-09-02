@@ -1,9 +1,9 @@
 class Dnote < Formula
   desc "Capture your learning without leaving the command line"
   homepage "https://dnote.io"
-  url "https://github.com/dnote/cli.git",
-		tag: "v0.4.0"
-  sha256 "57a7997268ef330368afc7c6dc8ecdeb5c217985994830379a932faab6372fce"
+  url "https://github.com/dnote/cli/releases/download/v0.4.2/dnote_0.4.2_darwin_amd64.tar.gz"
+  version "0.4.2"
+  sha256 "d78871314d52dc48b18200fff896de63db55077ef2ce4e5f407ab92a72873c00"
 
   depends_on "go" => :build
   depends_on "dep" => :build
@@ -16,5 +16,9 @@ class Dnote < Formula
       system "dep", "ensure"
       system "go", "build", "-ldflags", "-X main.apiEndpoint=https://api.dnote.io", "-o", bin/"dnote"
     end
+  end
+
+  test do
+    system "${bin}/dnote --version"
   end
 end
