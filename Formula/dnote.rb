@@ -1,9 +1,9 @@
 class Dnote < Formula
   desc "Capture your learning without leaving the command line"
   homepage "https://dnote.io"
-  url "https://github.com/dnote/cli/releases/download/v0.4.5/dnote_0.4.5_darwin_amd64.tar.gz"
-  version "0.4.5"
-  sha256 "a074f832290b50b7d7dc0d8e5872933e8be213dc4f3f90a627468ceea8321655"
+  url "https://github.com/dnote/cli/releases/download/v0.4.6/dnote_0.4.6_darwin_amd64.tar.gz"
+  version "0.4.6"
+  sha256 "7b498dafe1273cc20f692a069184dab7db00c04ca74ebfd63f6d686c84436842"
 
   def install
     bin.install "dnote"
