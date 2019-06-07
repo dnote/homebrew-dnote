@@ -16,7 +16,7 @@ cat > ./Formula/dnote.rb << EOF
 class Dnote < Formula
   desc "Capture your learning without leaving the command line"
   homepage "https://dnote.io"
-  url "https://github.com/dnote/cli/releases/download/v${version}/dnote_${version}_darwin_amd64.tar.gz"
+  url "https://github.com/dnote/dnote/releases/download/cli-v${version}/dnote_${version}_darwin_amd64.tar.gz"
   version "${version}"
   sha256 "${sha}"
 
