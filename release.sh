@@ -10,6 +10,7 @@ version=$1
 sha=$2
 
 echo "pulling latest dnote-homebrew repo"
+git checkout master
 git pull origin master
 
 cat > ./Formula/dnote.rb << EOF
