@@ -1,5 +1,5 @@
 class Dnote < Formula
-  desc "Capture your learning without leaving the command line"
+  desc "Capture your learning without leaving the command-line"
   homepage "https://dnote.io"
   url "https://github.com/dnote/dnote/releases/download/cli-v0.8.2/dnote_0.8.2_darwin_amd64.tar.gz"
   version "0.8.2"
@@ -7,5 +7,9 @@ class Dnote < Formula
 
   def install
     bin.install "dnote"
+  end
+
+  test do
+    system bin/"dnote", "version"
   end
 end
