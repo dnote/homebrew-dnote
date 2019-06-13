@@ -1,5 +1,7 @@
 # homebrew-dnote
 
+[![Build Status](https://travis-ci.org/dnote/homebrew-dnote.svg?branch=master)](https://travis-ci.org/dnote/homebrew-dnote)
+
 A Homebrew formula for Dnote.
 
 ## Usage
