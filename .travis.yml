@@ -1,0 +1,10 @@
+language: go
+os: osx
+addons:
+    homebrew:
+        taps: dnote/dnote
+        packages:
+            - dnote
+script:
+- brew audit dnote
+- dnote version
