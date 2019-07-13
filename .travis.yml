@@ -6,5 +6,6 @@ addons:
         packages:
             - dnote
 script:
+- brew update
 - brew audit dnote
 - dnote version
