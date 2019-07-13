@@ -5,6 +5,7 @@ addons:
         taps: dnote/dnote
         packages:
             - dnote
+        update: true
 script:
 - brew audit dnote
 - dnote version
