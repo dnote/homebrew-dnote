@@ -1,5 +1,5 @@
 class Dnote < Formula
-  desc "A simple command line notebook for programmers"
+  desc "Simple command-line notebook for programmers"
   homepage "https://www.getdnote.com"
   url "https://github.com/dnote/dnote/releases/download/cli-v0.11.1/dnote_0.11.1_darwin_amd64.tar.gz"
   version "0.11.1"
@@ -7,5 +7,9 @@ class Dnote < Formula
 
   def install
     bin.install "dnote"
+  end
+  
+  test do
+    system "#{bin}/dnote", "version"
   end
 end
