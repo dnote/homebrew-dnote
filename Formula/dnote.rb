@@ -8,7 +8,7 @@ class Dnote < Formula
   def install
     bin.install "dnote"
   end
-  
+ 
   test do
     system "#{bin}/dnote", "version"
   end
