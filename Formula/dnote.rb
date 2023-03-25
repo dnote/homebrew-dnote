@@ -3,7 +3,7 @@ class Dnote < Formula
   homepage "https://www.getdnote.com"
   url "https://github.com/dnote/dnote/releases/download/cli-v0.14.0/dnote_0.14.0_darwin_amd64.tar.gz"
   version "0.14.0"
-  sha256 "c34dfd5a7a47e5452a421fe0790d3aa9be5aa1307b95f7e2cff8ca21dee17576"
+  sha256 "264af0c4726cea5b5ffd48fc50f0a6c09f644f2b053c9266f7c08717deb7c733"
 
   def install
     bin.install "dnote"
