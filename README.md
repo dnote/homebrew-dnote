@@ -1,3 +1,5 @@
+Dnote is in the official Homebrew tap. This repo is archieved.
+
 # homebrew-dnote
 
 [![Build Status](https://travis-ci.org/dnote/homebrew-dnote.svg?branch=master)](https://travis-ci.org/dnote/homebrew-dnote)
